@@ -1,3 +1,23 @@
+**첫 실행 시**
+
+- 아래 코드 따라 동작하기(https 연결을 위한 인증서 설치 과정. 한 번 해두면 상관없음.)
+
+# Install mkcert tool
+
+brew install mkcert
+
+# Setup mkcert on your machine (creates a CA)
+
+mkcert -install
+
+# Create .cert directory if it doesn't exist
+
+mkdir -p .cert
+
+# Generate the certificate (run from the root of this project)
+
+mkcert -key-file ./.cert/key.pem -cert-file ./.cert/cert.pem "localhost"
+
 **기타 기기 연결을 위한 방법**
 
 1. localhost ip확인 - 터미널에 ifconfig 입력 후 나타나는 것 중에서 env0(맥북기준) inet 기억
