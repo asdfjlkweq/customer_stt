@@ -1,20 +1,14 @@
 **첫 실행 시**
 
-- 아래 코드 따라 동작하기(https 연결을 위한 인증서 설치 과정. 한 번 해두면 상관없음.)
+- 아래 코드 따라 동작하기( 한 번 해두면 상관없음.)
 
-# Install mkcert tool
+# https 연결을 위한 인증서 설치 과정
 
 brew install mkcert
 
-# Setup mkcert on your machine (creates a CA)
-
 mkcert -install
 
-# Create .cert directory if it doesn't exist
-
 mkdir -p .cert
-
-# Generate the certificate (run from the root of this project)
 
 mkcert -key-file ./.cert/key.pem -cert-file ./.cert/cert.pem "localhost"
 
