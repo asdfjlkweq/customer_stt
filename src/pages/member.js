@@ -7,13 +7,13 @@ import UserText from "../component/UserText";
 
 const Client = () => {
   const [click, setClick] = useState(false);
-  const [showNotice, setShowNotice] = useState(true);
+  // const [showNotice, setShowNotice] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setShowNotice(false);
-    }, 10000);
-  });
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setShowNotice(false);
+  //   }, 10000);
+  // });
 
   return (
     <div
@@ -50,7 +50,7 @@ const Client = () => {
         </button>
       </div>
 
-      {showNotice ? (
+      {/* {showNotice ? (
         <div
           style={{
             backgroundColor: "white",
@@ -62,7 +62,7 @@ const Client = () => {
         </div>
       ) : (
         ""
-      )}
+      )} */}
 
       {click ? (
         <div
