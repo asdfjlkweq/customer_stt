@@ -7,7 +7,7 @@ const CheckList = () => {
   useEffect(() => {
     const fetchInfo = () => {
       axios
-        .get("http://34.64.167.142:5000/user/3/info")
+        .get("http://34.64.167.142:5000/user/1/info")
         .then((Response) => {
           console.log(Response);
           setItems(Response.data.tasks);
